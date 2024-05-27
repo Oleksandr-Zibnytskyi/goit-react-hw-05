@@ -18,7 +18,7 @@ const notify = () =>
     },
   });
 
-export default function MovieCast() {
+export default function MovieReviews() {
   const [movieReviews, setMovieReviews] = useState([]);
   const { movieId } = useParams();
 

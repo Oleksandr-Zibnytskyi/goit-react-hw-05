@@ -11,7 +11,7 @@ export default function Novigation () {
         <div>
             <header className={css.header}>
             <NavLink to="/" className={getLinkClass}>Home</NavLink>
-            <NavLink to="/Movies" className={getLinkClass}>Movies</NavLink>
+            <NavLink to="/movies" className={getLinkClass}>Movies</NavLink>
             </header>
         </div>
     );
