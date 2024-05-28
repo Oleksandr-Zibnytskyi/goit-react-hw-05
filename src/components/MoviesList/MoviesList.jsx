@@ -1,8 +1,10 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import css from './MoviesList.module.css';
+import PropTypes from 'prop-types';
 
-export default function MovieList({ movies, location }) {
+export default function MovieList({ movies }) {
     const defaultImg = 'https://via.placeholder.com/500x750?text=No+Image';
+    const location = useLocation();
 
     const poster = (movie) => {
         const { id, title, poster_path } = movie;
@@ -28,6 +30,15 @@ export default function MovieList({ movies, location }) {
     );
 }
 
+MovieList.propTypes = {
+    movies: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number.isRequired,
+            title: PropTypes.string.isRequired,
+            poster_path: PropTypes.string
+        })
+    ).isRequired,
+};
   
 
 
