@@ -5,6 +5,7 @@ import Loader from "../../components/Loader/Loader";
 import toast from "react-hot-toast";
 import { ImArrowLeft } from "react-icons/im";
 import css from "./MovieDetailsPage.module.css";
+import MovieList from "../..components/MovieList/MovieList";
 
 const notify = () =>
   toast.error("Something went wrong. Please, try again!", {
@@ -102,6 +103,7 @@ export default function MovieDetailsPage() {
           <Outlet />
         </Suspense>
       </div>
+      <MovieList movies={[]} from={location.state?.from || "/"} />
     </main>
   );
 }

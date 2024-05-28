@@ -20,7 +20,7 @@ export default function MovieList({ movies }) {
                 const { posterUrl, id, title } = poster(movie);
                 return (
                     <li key={id} className={css.movieCard}>
-                        <Link to={`/movies/${id}`} state={location}>
+                        <Link to={`/movies/${id}`} state={{ from: location }}>
                             <img src={posterUrl} alt={title} className={css.poster} />
                         </Link> 
                     </li>
