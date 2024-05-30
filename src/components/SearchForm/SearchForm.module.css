@@ -1,30 +1,36 @@
-.form {
+.container {
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
-}
-
-.input {
-    padding: 5px 5px 5px 15px;
-    width: 350px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    border: 1;
-    border-color: rgb(173, 173, 173);
-    border-radius: 15px;
-    font-size: 14px;
-}
-
-.btnSearch {
-    width: 80px;
-    height: 30px;
-    color: antiquewhite;
-    background-color: rgba(228, 22, 22, 0.827);
-    border: 0;
-    border-radius: 15px;
+  }
+  
+  .form {
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid rgb(38, 63, 117);
+    width: 500px;
+    height: 28px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 18px;
+  }
+  
+  .btn {
+    background-color: transparent;
+    border: 1px solid rgb(46, 112, 234);
+    background-color: transparent;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    border: none;
+  }
+  
+  .input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: transparent;
     font-size: 16px;
-}
-
-
-.btnSearch:hover {
-    background-color: rgba(199, 0, 46, 0.897);
-}
+  }

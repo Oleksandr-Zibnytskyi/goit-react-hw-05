@@ -2,10 +2,12 @@
     display: flex;
 font-size: 18px;
 margin: 10px;
-gap: 10px;
-width: 100px;
+gap: 5px;
+width: 120px;
 padding: 10px;
+font-weight: 550;
 }
+
 
 .movieInfo {
     display: flex;

@@ -3,9 +3,9 @@ import { fetchMovieDetails } from "../../apiServices";
 import { useState, useEffect, Suspense, useRef } from "react";
 import Loader from "../../components/Loader/Loader";
 import toast from "react-hot-toast";
-import { ImArrowLeft } from "react-icons/im";
+import { MdArrowBackIos } from "react-icons/md";
 import css from "./MovieDetailsPage.module.css";
-import MovieList from "../..components/MovieList/MovieList";
+import MovieList from "../../components/MoviesList/MoviesList";
 
 const notify = () =>
   toast.error("Something went wrong. Please, try again!", {
@@ -48,8 +48,8 @@ export default function MovieDetailsPage() {
     <main className="container">
       <div className={css.detailsPage}>
         <Link to={backLinkHref.current} className={css.goBackLink}>
-          <ImArrowLeft className={css.icon} />
-          Go back
+          <MdArrowBackIos className={css.icon} />
+          GO BACK
         </Link>
         <div className={css.movieInfo}>
           <img
