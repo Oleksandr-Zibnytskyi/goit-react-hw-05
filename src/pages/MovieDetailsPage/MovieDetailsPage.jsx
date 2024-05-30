@@ -98,6 +98,8 @@ export default function MovieDetailsPage() {
               </Link>
             </li>
           </ul>
+          <dir className={css.cont}>
+          </dir>
         </div>
         <Suspense fallback={<Loader />}>
           <Outlet />

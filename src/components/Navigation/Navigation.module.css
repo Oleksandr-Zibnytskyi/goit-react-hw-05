@@ -2,15 +2,14 @@
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
-  padding: 10px 0 10px 10px;
+  padding: 10px 0 10px 15px;
   background-color: rgb(74, 81, 111);
   box-shadow: 0px 5px 10px rgb(59, 59, 59);
   border-radius: 5px;
-
 }
 
 .link {
-  padding: 5px;
+  padding: 4px;
   color: rgb(255, 255, 255);
 }
 
